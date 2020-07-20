@@ -62,7 +62,7 @@
         "virtualNetworkName": "MyVNET",
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
         "networkSecurityGroupName": "default-NSG",
-        "customScript": "Set-WinSystemLocale en-GB\r\nSet-WinUserLanguageList -LanguageList en-GB -Force\r\nSet-Culture -CultureInfo en-GB\r\nSet-WinHomeLocation -GeoId 242\r\nlogoff",
+        "customScript": "Set-WinSystemLocale en-GB\r\nSet-WinUserLanguageList -LanguageList en-GB -Force\r\nSet-Culture -CultureInfo en-GB\r\nSet-WinHomeLocation -GeoId 242\r\nRestart-Computer -Force",
         "timeZone": "GMT Standard Time"
     },
     "resources": [
